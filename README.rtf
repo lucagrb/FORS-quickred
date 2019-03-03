@@ -2,15 +2,14 @@ This simple script can be useful to reduce quickly the spectroscopic data observ
 Spectral calibration files for a set of grisms are included in this release. 
 You need only the couple of spectral .fits files of the SCIENCE (SKY) observation
 
-To run this script call you need firt to first copy the science files into the main folder
+To run this script call you first need to first copy the science files into the main folder.
 After that, you need to launch the following command:
 
 > python FORS_pipeluca_v1.py\
 
-The script will check for the grism(s) for the data into the folder
-and then it will ask which grism to reduce first
+The script will check for the grism of the science data and will use the corresponding calibration files stored in the corresponding folder.
 
-An 'output' folder is automatically created, where the final files will be saved in.
+An 'output' folder for each grism is automatically created, where the final files will be saved in.
 
 The 2D flux- and wavelength-calibrated science files are stored in the files starting with 'mapped_flux_sci'
 
