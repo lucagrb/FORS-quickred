@@ -6,7 +6,7 @@ N.B. the script structure is similar to a similar script used for MUSE data redu
 To run this script call you need firt to first copy the science files into the main folder
 After that, you need to launch the following command:
 
-> python FORS_pipeluca_v1.py
+> python FORS-quickred.py
 
 The script will check for the grism(s) for the data into the folder
 and then it will ask which grism to reduce first
