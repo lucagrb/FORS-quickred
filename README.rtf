@@ -1,24 +1,17 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+This simple script can be useful to reduce quickly the spectroscopic data observed using the FORS2 instrument at ESO/VLT. 
+Spectral calibration files for a set of grisms are included in this release. 
+You need only the couple of spectral .fits files of the SCIENCE (SKY) observation
 
-\f0\fs24 \cf0 FORS DATA REDUCTION SCRIPT - v1.0 (2019)\
-\
-This simple script can be useful to reduce quickly the spectroscopic data observed using the FORS2 instrument at ESO/VLT. Spectral calibration files for a set of grisms are included in this release. You need only the couple of spectral .fits files of the SCIENCE (SKY) observation\
-\
-To run this script call you need firt to first copy the science files into the main folder\
-\
-After that, you need to launch the following command:\
-\
+To run this script call you need firt to first copy the science files into the main folder
+After that, you need to launch the following command:
+
 > python FORS_pipeluca_v1.py\
-\
-The script will check for the grism(s) for the data into the folder\
-and then it will ask which grism to reduce first\
-\
-An \'93output\'94 folder is automatically created, where the final files will be saved in.\
-\
-The 2D flux- and wavelength-calibrated science files are stored in the files starting with "mapped_flux_sci"\
-\
-REQUISITES: astropy, CPL libraries, shutil}
+
+The script will check for the grism(s) for the data into the folder
+and then it will ask which grism to reduce first
+
+An 'output' folder is automatically created, where the final files will be saved in.
+
+The 2D flux- and wavelength-calibrated science files are stored in the files starting with 'mapped_flux_sci'
+
+REQUISITES: astropy, CPL libraries, shutil
