@@ -14,3 +14,23 @@ An 'output' folder for each grism is automatically created, where the final file
 The 2D flux- and wavelength-calibrated science files are stored in the files starting with 'mapped_flux_sci'
 
 REQUISITES: astropy, CPL libraries, shutil
+
+-----------------------
+04/03/2019 update
+
+An other requirement consists in modifying the esorex configuration file esorex.rc.
+In particular, the following option
+
+--suppress-prefix
+
+must be set to TRUE via the following command:
+
+esorex.caller.suppress-prefix=TRUE
+
+For users that have installed esorex through Macport, the esorex.rc file it is usually located in the 
+
+/opt/local/etc
+
+folder.
+
+Thanks to Kasper Elm Heintz. 
