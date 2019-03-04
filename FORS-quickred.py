@@ -140,7 +140,7 @@ def create_science_sof():
 if True:
     try:
         create_science_sof()
-        print('---Running FORS_science for target(s)---', shell = True)
+        call('---Running FORS_science for target(s)---', shell = True)
         for i in range(len(data_files)):
             call('esorex --log-file=science.log fors_science --skyalign=-1 --skyglobal=TRUE --skylocal=FALSE --cosmics=TRUE science'+str(i)+'.sof', shell = True)
             try:
